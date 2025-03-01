@@ -1,0 +1,6 @@
+aiogram==3.0.0b7
+python-dotenv==0.21.0
+aiohttp==3.8.1
+apscheduler==3.9.1
+sqlite3  # возможно, и не нужно явно указывать
+

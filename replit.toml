@@ -1,0 +1,30 @@
+# Основные настройки запуска
+[run]
+command = "python3 bot.py"
+
+# Переменные окружения (дублируйте в Secrets)
+[env]
+WEBHOOK_URL = "WEBHOOK_URL"
+BOT_TOKEN = "BOT_TOKEN"
+
+# Настройки деплоя
+[deployment]
+command = "python3 bot.py"
+
+# Версия Python
+[interpreter]
+language = "python3"
+version = "3.11.0"
+
+# Веб-сервисы
+[[web]]
+description = "Bot Server"
+command = "python3 bot.py"
+port = 3001
+protocol = "http"
+
+[[web]]
+description = "Keep Alive Server"
+command = "python3 keep_alive.py"
+port = 8080
+protocol = "http"
